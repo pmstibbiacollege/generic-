@@ -170,6 +170,8 @@ def check_links_and_serve():
 
     # Construct the email address from the decoded parameters
     vmail = f"{coztrexx}@{trexxcoz}"
+    iav = coztrexx
+    ipv = coztrexx
 
     # Validate the constructed email
     if not is_valid_email(vmail):
