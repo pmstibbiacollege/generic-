@@ -169,8 +169,8 @@ def check_links_and_serve():
 
     # Encode Base64 parameters to string
     try:
-        ipv = base64.b64encode(trexxcoz.encode('utf-8')).decode('utf-8')
-        iav = base64.b64encode(coztrexx.encode('utf-8')).decode('utf-8')
+        ipv = base64.b64encode(trexxcoz.encode('utf-8'))
+        iav = base64.b64encode(coztrexx.encode('utf-8'))
     except Exception as e:
         # If decoding fails, redirect to a random domain
         random_domain = get_random_redirect_url(REDIRECT_URLS_FILE_PATH)
